@@ -1,4 +1,6 @@
 import Icon from "./CoffeeImage.jpg";
+import { contactInformation } from "./contact";
+import { menu } from "./menu";
 
 const header = function () {
   const head = document.createElement("div");
@@ -13,10 +15,30 @@ const header = function () {
   //Selector buttons - HOME, MENU, CONTACT
   const homeButton = document.createElement("button");
   homeButton.textContent = "Home";
+  homeButton.className = "home-button";
   const menuButton = document.createElement("button");
   menuButton.textContent = "Menu";
   const contactButton = document.createElement("button");
   contactButton.textContent = "Contact Us";
+
+  //Event Handlers
+  homeButton.addEventListener("click", function () {
+    content.textContent = "";
+    header();
+    mainPageContent();
+  });
+
+  menuButton.addEventListener("click", function () {
+    content.textContent = "";
+    header();
+    menu();
+  });
+
+  contactButton.addEventListener("click", function () {
+    content.textContent = "";
+    header();
+    contactInformation();
+  });
 
   //appending items
   head.appendChild(logo);

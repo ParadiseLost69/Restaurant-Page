@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Nunito&family=Roboto+Slab:wght@200&family=Ubuntu:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Nunito&family=Roboto+Slab:wght@200&family=Ubuntu:wght@300&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -45,15 +44,57 @@ button {
   width: 80px;
   border-radius: 5px;
   place-self: center;
+  transition: transform 100ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.02);
 }
 
 .logo {
   color: wheat;
   font-size: 5rem;
   padding-left: 10px;
+  font-family: "Abril Fatface";
 }
 
 .information {
   font-size: 2rem;
   padding-left: 5px;
+}
+
+p {
+  height: 100px;
+}
+
+.menu-book {
+  display: grid;
+  grid-template-rows: 1fr 3fr 3fr;
+  grid-auto-rows: 3fr;
+  place-content: center;
+  gap: 2px;
+  text-align: center;
+}
+
+.card {
+  height: 300px;
+  width: 600px;
+  border: solid 2px wheat;
+  border-radius: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 400ms ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  height: 150px;
+  border: 1px solid wheat;
+  border-radius: 50px;
 }
