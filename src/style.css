@@ -1,5 +1,59 @@
-.hello {
-  color: red;
-  font-size: 200px;
-  background-image: url("./CoffeeImage.jpg");
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Nunito&family=Roboto+Slab:wght@200&family=Ubuntu:wght@300&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+:root {
+  background-color: #212121;
+  font-family: "Roboto Slab", sans-serif;
+  color: wheat;
+}
+/* content*/
+#content {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 14fr;
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: 1fr 0.2fr 0.2fr;
+}
+
+.main-picture {
+  min-height: 200px;
+  max-height: 800px;
+  min-width: none;
+  max-width: 100%;
+  place-self: center;
+}
+
+/* header and content*/
+.header {
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr 1fr;
+  padding: 10px;
+  gap: 10px;
+}
+button {
+  text-decoration: none;
+  background-color: #212121;
+  color: wheat;
+  border: 2px solid wheat;
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  place-self: center;
+}
+
+.logo {
+  color: wheat;
+  font-size: 5rem;
+  padding-left: 10px;
+}
+
+.information {
+  font-size: 2rem;
+  padding-left: 5px;
 }
